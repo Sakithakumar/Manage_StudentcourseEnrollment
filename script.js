@@ -1,12 +1,9 @@
 document.getElementById('enrollmentForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent page reload
-
-    // Get input values
+    event.preventDefault(); 
     const courseName = document.getElementById('courseName').value.trim();
     const courseCode = document.getElementById('courseCode').value.trim();
     const studentName = document.getElementById('studentName').value.trim();
 
-    // Create a new list item
     const studentList = document.getElementById('studentList');
     
     const listItem = document.createElement('li');
